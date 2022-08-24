@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="https://kit.fontawesome.com/baea20263b.js" crossorigin="anonymous"></script>
+   
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cormorant+SC:wght@500&family=Cormorant:wght@300&family=Dancing+Script:wght@500&family=Great+Vibes&family=Marck+Script&family=Parisienne&family=Petit+Formal+Script&family=Pinyon+Script&family=Rouge+Script&family=Tangerine&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cormorant+SC:wght@500&family=Dancing+Script:wght@500&family=Great+Vibes&family=Marck+Script&family=Parisienne&family=Petit+Formal+Script&family=Pinyon+Script&family=Rouge+Script&family=Tangerine&display=swap" rel="stylesheet">  
-    
+   <script src="https://kit.fontawesome.com/baea20263b.js" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
@@ -171,6 +171,9 @@
 </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        $(window).on("load", function(){
+            $("body").append("<script src='script.js'>")
+        });
         $(document).ready(function(){
             $(".mobile-nav i").click(function(){
                 $(".site-nav-menu").toggleClass("mobile-menu");
